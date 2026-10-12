@@ -1,0 +1,23 @@
+FAILED LOGIN DETECTION REPORT
+================================
+Input file: logs/sample-auth-events.txt
+Matching events analyzed: 3
+
+Events by account:
+  analyst: 3
+
+Events by service:
+  gdm-password: 3
+
+Event timeline:
+  Oct 09 21:41:02 | account=analyst | service=gdm-password
+  Oct 10 20:04:49 | account=analyst | service=gdm-password
+  Oct 10 20:22:13 | account=analyst | service=gdm-password
+
+THRESHOLD ALERTS (5+ events)
+  No accounts reached the threshold.
+
+ASSESSMENT
+Failed authentication does not by itself confirm malicious activity.
+Source IPs and attack attribution are not inferred from these records.
+Further investigation is needed to establish cause and intent.
